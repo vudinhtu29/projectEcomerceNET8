@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mua Sắm Trực Tuyến</h1>
+</div>
+
+<!-- Main Content Start -->
+<div class="container my-5">
+    <!-- Featured Products Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Sản phẩm nổi bật</h2>
+        </div>
+        <!-- Example Product Card -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+                <img src="img/product1.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sản phẩm</h5>
+                    <p class="card-text">Top bán chạy nhất</p>
+                    <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above block for more products -->
+    </div>
+
+    <!-- Categories Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Danh mục</h2>
+        </div>
+        <!-- Example Category Card -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+                <img src="img/category1.jpg" class="card-img-top" alt="Category 1">
+                <div class="card-body">
+                    <h5 class="card-title">Tất cả sản phẩm</h5>
+                    <a href="#" class="btn btn-secondary">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above block for more categories -->
+    </div>
+
+    <!-- Promotions Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Khuyến mãi đặc biệt</h2>
+        </div>
+        <!-- Example Promotion Card -->
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <img src="img/promo1.jpg" class="card-img-top" alt="Promotion 1">
+                <div class="card-body">
+                    <h5 class="card-title">Khuyến mãi 1</h5>
+                    <p class="card-text">Chi tiết về khuyến mãi 1</p>
+                    <a href="#" class="btn btn-warning">Xem ngay</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above block for more promotions -->
+    </div>
+</div>
+<!-- Main Content End -->
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <h1 class="text-primary mb-0">Radley</h1>
+                        <p class="text-secondary mb-0">Trực tuyến</p>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Email của bạn">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Gửi</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Mua sắm trực tuyến</h4>
+                    <p class="mb-4">
+                        Radley đồng hành cùng bạn !
+                    </p>
+                    <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Ủng hộ chúng tôi</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                    <h4 class="text-light mb-3">Về chúng tôi</h4>
+                    <p class="mb-4">
+                        Hình thành và phát triển qua 10 năm, Radley nhận được nhiều sự tin tưởng của người dùng, chúng tôi luôn đặt niềm tin của khách hàng lên hàng đầu
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                    <h4 class="text-light mb-3">Tài khoản</h4>
+                    <a asp-action="DangNhap" asp-controller="KhachHang" class="text-white"><small class="text-white mx-2">Đăng nhập</small></a>
+                    <a asp-controller="KhachHang" asp-action="DangKy" class="text-white"> <small class="text-white mx-2">Đăng kí</small></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Liên hệ</h4>
+                    <p>Địa chỉ: Hoa Lac - Ha Noi</p>
+                    <p>Email: vudinhtu2904@gmail.com</p>
+                    <p>Số điện thoại: 0926158111</p>
+                    <p>Thanh toán : BIDV VU DINH TU - 4610587099</p>
+                    <img src="img/payment.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
